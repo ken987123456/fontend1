@@ -1,13 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function index() {
+export default function about_us() {
   return (
     <>
-    <Head>
-      <title>Go Went Gone</title>
-    </Head>
+    <Head><title>Go Went Go</title></Head>
+
+<header>
 <nav className="navbar navbar-expand-lg text-bg-secondary">
   <div className="container-fluid">
     <a className="navbar-brand" href="."><img src="logo.png" alt="" width={70}></img></a>
@@ -17,7 +18,7 @@ export default function index() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/home">หน้าหลัก</a>
+          <a className="nav-link active" aria-current="page" href=".">หน้าหลัก</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/about">เกี่ยวกับเรา</a>
@@ -27,10 +28,10 @@ export default function index() {
             บริการของเรา
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><a className="dropdown-item" href="#">ที่พัก</a></li>
+            <li><a className="dropdown-item" href="#">ตั๋วเครื่องบิน</a></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><a className="dropdown-item" href="#">อาหาร</a></li>
           </ul>
         </li>
       </ul>
@@ -41,15 +42,16 @@ export default function index() {
     </div>
   </div>
 </nav>
+</header>
 <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval={1300}>
+    <div className="carousel-item active" data-bs-interval={1200}>
       <img src="wall1.png" className="d-block w-100" alt="wall.png" />
     </div>
-    <div className="carousel-item" data-bs-interval={1300}>
+    <div className="carousel-item" data-bs-interval={1200}>
       <img src="wall2.png" className="d-block w-100" alt="wall.png" />
     </div>
-    <div className="carousel-item" data-bs-interval={1300}>
+    <div className="carousel-item" data-bs-interval={1200}>
     <img src="wall3.png" className="d-block w-100" alt="wall.png" />
     </div>
   </div>
@@ -89,25 +91,19 @@ export default function index() {
 </div>
 
 <div>
-  <footer>
+<footer>
     <div className="b-example-divider" />
     <div className="container">
       <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">Home</a></li>
-          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">Features</a></li>
-          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">Pricing</a></li>
-          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">FAQs</a></li>
-          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">About</a></li>
+          <li className="nav-item"><a href="https://www.facebook.com/buabenjarat3009" className="nav-light px-2 text-body-light">facebook</a></li>
+          <li className="nav-item"><a href="https://www.instagram.com/buabenjax._/?hl=th" className="nav-light px-2 text-body-light">Instagram</a></li>
         </ul>
-        <p className="text-center text-body-light ">© 2023 Company, Inc</p>
+        <p className="text-center text-body-light ">Go Went Gone</p>
       </footer>
     </div>
   </footer>
-  )
-
 </div>
-
     </>
   )
 }
