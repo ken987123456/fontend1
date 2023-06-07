@@ -89,7 +89,6 @@ export default function about_us() {
   </div>
 </div>
 </div>
-
 <div>
 <footer>
     <div className="b-example-divider" />
