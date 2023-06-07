@@ -6,21 +6,21 @@ export default function index() {
   return (
     <>
     <Head>
-      <title>Hello Guys</title>
+      <title>Go Went Gone</title>
     </Head>
-<nav className="navbar navbar-expand-lg text-dark bg-info">
+<nav className="navbar navbar-expand-lg text-bg-secondary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="."><img src="logo.png" alt="" width={70}></img></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+          <a className="nav-link active" aria-current="page" href="/home">หน้าหลัก</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">เกี่ยวกับเรา</a>
+          <a className="nav-link" href="/about">เกี่ยวกับเรา</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,26 +34,26 @@ export default function index() {
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled">ติดต่อเรา</a>
+        <a className="nav-link disabled" href='/call'>ติดต่อเรา</a>
         </li>
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        <button className="btn btn-dark" type="submit">Search</button>
       </form>
     </div>
   </div>
 </nav>
 <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval={200}>
+    <div className="carousel-item active" data-bs-interval={1300}>
       <img src="wall1.png" className="d-block w-100" alt="wall.png" />
     </div>
-    <div className="carousel-item" data-bs-interval={200}>
+    <div className="carousel-item" data-bs-interval={1300}>
       <img src="wall2.png" className="d-block w-100" alt="wall.png" />
     </div>
-    <div className="carousel-item" data-bs-interval={200}>
-      <img src="wall3.png" className="d-block w-100" alt="wall.png" />
+    <div className="carousel-item" data-bs-interval={1300}>
+    <img src="wall3.png" className="d-block w-100" alt="wall.png" />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -65,75 +65,52 @@ export default function index() {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-<div className="row text-center">
-  <div className="col-lg-4">
-    <svg className="bd-placeholder-img rounded-circle" width={140} height={140} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-    <h2 className="fw-normal">Heading</h2>
-    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-    <p><a className="btn btn-secondary" href="#">View details »</a></p>
-  </div>
-  <div className="col-lg-4">
-    <svg className="bd-placeholder-img rounded-circle" width={140} height={140} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-    <h2 className="fw-normal">Heading</h2>
-    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-    <p><a className="btn btn-secondary" href="#">View details »</a></p>
-  </div>
-  <div className="col-lg-4">
-    <svg className="bd-placeholder-img rounded-circle" width={140} height={140} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-    <h2 className="fw-normal">Heading</h2>
-    <p>And lastly this, the third column of representative placeholder content.</p>
-    <p><a className="btn btn-secondary" href="#">View details »</a></p>
+<br></br>
+<div class="container marketing">
+<div>
+  <div className="row">
+    <div className="col-lg-4">
+      <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/338585293_239829545128899_4220305952545380222_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeGzYyEPVneLzutQt1uQLiO3NzdZQocZNG83N1lChxk0b966mGHCMmXjtByxHYaUMDEHzLIl-3INubQv2_XgYqKd&_nc_ohc=prsgU_8XIOoAX_blz4U&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBKCNpblXCIWxWBjolMaDdXmnixkt-BG_uZsGYNxWyjTQ&oe=6484518F"/>
+      <h2 className="fw-normal">ทะเล</h2></center> 
+      <p></p>
+      <center><p><a className="btn btn-secondary" href="#">View details »</a></p></center>
+    </div>
+    <div className="col-lg-4">
+    <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/294666886_5270433536380653_8262167781483113888_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEHq06TVT52Avb4UpF5IHds3O0g1pbXZSfc7SDWltdlJz6UHXpbZbd6zTto8MET4-MAOF-vr-Gc-JVFdk4R4xob&_nc_ohc=E9PbOYxYZJMAX_JMU1h&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfBGRiS-FhcsgqXiEOrj2pcNprreJWnM6WjwHh2bCeP9cA&oe=64841D22"/>
+    <h2 className="fw-normal">ภูเขา</h2></center>
+      <p></p>
+      <center><p><a className="btn btn-secondary" href="#">View details »</a></p></center>
+    </div>
+    <div className="col-lg-4">
+    <center><img className="bd-placeholder-img rounded-circle" width={140} height={140} src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/294507498_5270433143047359_6697456741612438194_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEdz-HY68xGe6YKH6I39Ys1x5yW9J9wI4fHnJb0n3Ajh6uh0Cr945_HVlJ_5M-dLs9BMW3_5lzVNfam_zYmb3Q3&_nc_ohc=oIZFROQWpSUAX9dYdv8&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfAcZ7gk-UKTc9jZk6O17Vie6TpHj1m2DM7UFpWRBiYhag&oe=6485CA75"/>
+    <h2 className="fw-normal">วัด</h2></center>
+      <p></p>
+      <center><p><a className="btn btn-secondary" href="#">View details »</a></p></center>
+    </div>
   </div>
 </div>
+</div>
 
-
-<div className="container">
-  <footer className="py-5">
-    <div className="row">
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
+<div>
+  <footer>
+    <div className="b-example-divider" />
+    <div className="container">
+      <footer className="py-3 my-4">
+        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">Home</a></li>
+          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">Features</a></li>
+          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">Pricing</a></li>
+          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">FAQs</a></li>
+          <li className="nav-item"><a href="#" className="nav-light px-2 text-body-light">About</a></li>
         </ul>
-      </div>
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-      <div className="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label htmlFor="newsletter1" className="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
-            <button className="btn btn-primary" type="button">Subscribe</button>
-          </div>
-        </form>
-      </div>
+        <p className="text-center text-body-light ">© 2023 Company, Inc</p>
+      </footer>
     </div>
   </footer>
+  )
+  {'}'}
 </div>
+
     </>
   )
 }
