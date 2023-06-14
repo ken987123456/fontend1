@@ -1,36 +1,36 @@
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function about_us() {
   return (
     <>
     <Head><title>Go Went Go</title></Head>
+
 <header>
 <nav className="navbar navbar-expand-lg text-bg-secondary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="."><img src="logo.png" alt="" width={70}></img></a>
+    <Link className="navbar-brand" href="."><img src="logo.png" alt="" width={70}></img></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href=".">หน้าหลัก</a>
+          <Link className="nav-link active" aria-current="page" href=".">หน้าหลัก</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">เกี่ยวกับเรา</a>
+          <Link className="nav-link" href="/about">เกี่ยวกับเรา</Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             บริการของเรา
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">ที่พัก</a></li>
-            <li><a className="dropdown-item" href="#">ตั๋วเครื่องบิน</a></li>
+            <li><Link className="dropdown-item" href="#">ที่พัก</Link></li>
+            <li><Link className="dropdown-item" href="#">ตั๋วเครื่องบิน</Link></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item" href="#">อาหาร</a></li>
+            <li><Link className="dropdown-item" href="#">อาหาร</Link></li>
           </ul>
         </li>
       </ul>
